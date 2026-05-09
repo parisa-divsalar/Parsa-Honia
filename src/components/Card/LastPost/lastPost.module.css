@@ -1,0 +1,29 @@
+.about_team {
+	display: flex;
+ 	margin-bottom: 20px;
+	flex-direction: column;
+	align-items: center;
+
+}
+.about_team_item {
+	display: flex;
+	gap: 5px;
+	justify-content: space-between;
+	align-items: center;
+	position: relative;
+}
+.about_team_team {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.section_item_image {
+	overflow: hidden;
+	border-radius: 10px;
+}
+@media screen and (max-width: 1200px){
+	.about_team {
+ 		flex-direction: column!important;
+		justify-content: center;
+	}
+}

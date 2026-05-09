@@ -1,0 +1,10 @@
+.navlink {
+
+}
+
+
+@media screen and (max-width: 991px ) {
+	.navlink {
+		border-bottom: 1px solid;
+	}
+}

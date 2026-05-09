@@ -1,0 +1,28 @@
+.question {
+ 	justify-content: space-between;
+	align-items: center;
+	flex-direction: row!important;
+}
+.question_item {
+	display: flex;
+	flex-direction: column;
+	justify-content: right;
+	align-items: start;
+}
+
+.question_item_text {
+	display: flex;
+	flex-direction: column;
+	justify-content: right;
+	align-items: start;
+	padding: 0;
+	text-align: right;
+}
+@media screen and (max-width: 1200px){
+	.question {
+		flex-direction: column!important;
+	}
+	.question_image {
+		display: none!important;
+	}
+}

@@ -1,0 +1,37 @@
+.section {
+	display: grid;
+	grid-template-columns: repeat(3, auto);
+	gap: 20px;
+}
+.section_big {
+	display: grid;
+	grid-template-columns: repeat(2, auto);
+	gap: 20px;
+}
+
+.aboutText{
+	align-items: center;
+	justify-content: center;
+	display: flex;
+	width: 100%;
+
+}
+.section_item_text {
+	display: flex;
+	flex-direction: column;
+	justify-content: right;
+	align-items: start;
+	padding: 0;
+	text-align: right;
+}
+
+@media screen and (max-width: 1200px){
+	.section_big {
+ 		grid-template-columns: repeat(1, auto);
+		gap: 15px;
+	}
+	.section {
+ 		grid-template-columns: repeat(2, auto);
+		gap: 15px;
+	}
+}

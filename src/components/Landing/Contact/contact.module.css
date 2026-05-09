@@ -1,0 +1,39 @@
+.contact {
+	display: flex;
+	justify-content: center;
+	border-radius: 30px;
+}
+.contact_section {
+	border-radius: 0 20px 20px 0;
+	height: 477px;
+}
+
+.backUp_item_text {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: start;
+	padding: 0;
+	text-align: right;
+}
+.image {
+	position: relative;
+}
+@media screen and (max-width: 1200px){
+	.image {
+		/*display: none;*/
+		height: 200px;
+		width: 100%;
+	}
+	.contact_section {
+		border-radius:20px;
+		width: 100%!important;
+ 	}
+	.contact {
+		flex-direction: column-reverse;
+	}
+	.contact_section {
+		border-radius:0 0 20px 20px ;
+		height: unset;
+	}
+}

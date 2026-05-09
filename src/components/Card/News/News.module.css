@@ -1,0 +1,15 @@
+.section_item {
+	display: flex;
+	gap: 50px;
+	flex-direction: row;
+}
+.section_item_image {
+   overflow: hidden;
+	border-radius: 10px;
+}
+@media screen and (max-width: 1200px){
+	.section_item {
+		flex-direction: column;
+		gap: 10px;
+	}
+}

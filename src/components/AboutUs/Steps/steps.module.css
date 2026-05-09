@@ -1,0 +1,27 @@
+.steps {
+	display: flex;
+    justify-content: space-between;
+	margin-bottom: 20px;
+}
+.section_item {
+	display: flex;
+	flex-direction: column;
+	justify-content: right;
+	align-items: start;
+}
+
+.section_item_text {
+	display: flex;
+	flex-direction: column;
+	justify-content: right;
+	align-items: start;
+	padding: 0;
+	text-align: right;
+}
+
+@media screen and (max-width: 1200px){
+	.steps {
+ 		flex-direction: column!important;
+		justify-content: center;
+	}
+}
