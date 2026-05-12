@@ -4,6 +4,8 @@ const nextConfig = {
     dirs: ['src'],
   },
 
+
+
   reactStrictMode: true,
   swcMinify: true,
 
@@ -44,5 +46,12 @@ const nextConfig = {
     return config;
   },
 };
-
+module.exports = {
+    webpack: (config) => {
+        return config;
+    },
+    experimental: {
+        turbopack: false,
+    },
+};
 module.exports = nextConfig;
