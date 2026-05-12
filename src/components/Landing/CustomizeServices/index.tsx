@@ -29,9 +29,9 @@ const CustomizeServicesSection = () => {
           justifyContent='space-between'
           className={classes.customizeServices_gap}
         >
-          <Grid className={classes.customizeServices}>
+          <Grid container className={classes.customizeServices}>
             {CustomizeServicesList.map((item, index) => (
-              <Grid key={`custom_${index}`} size={{ xs: 4 }} mt={1}>
+              <Grid item xs={4} key={`custom_${index}`} mt={1}>
                 <CustomizeServicesCard des={item.des} img={item.img} title={item.title} />
               </Grid>
             ))}

@@ -19,9 +19,9 @@ const LastPostSection = () => {
 
 					پست های اخیر
 				</Typography>
-				<Grid className={classes.section}>
+				<Grid container className={classes.section}>
 					{LastPostList.map((item: LastPostItem) => (
-						<Grid size={{ xs: 4 }} key={item.id}>
+						<Grid item xs={4} key={item.id}>
 							<LastPostCard lastPostItem={item} />
 						</Grid>
 					))}

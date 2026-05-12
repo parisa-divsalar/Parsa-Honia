@@ -16,10 +16,10 @@ const HeroSection = () => {
 	const [isActive, setIsActive] = useState('project');
 
 	return (
-		<Grid bgcolor='background.mainLight'>
+		<Grid container bgcolor='background.mainLight'>
 			<Container maxWidth='xl'>
 				<Grid className={classes.hero_section} container width='100%' py={{xs:2 , lg:15}}>
-					<Grid size={{lg: 6}} mt={{xs:2 , lg: 0}} p={{xs:0 , lg:4}}>
+					<Grid item xs={12} lg={6} mt={{xs:2 , lg: 0}} p={{xs:0 , lg:4}}>
 						<Typography variant='h4' color='white' textAlign={{xs:'center' ,lg:'right'}}>
                              ارائه کننده خدمات مهندسی، تأمین تجهیزات و اجرا (EPC)
 						</Typography>
@@ -44,7 +44,7 @@ const HeroSection = () => {
 						</Stack>
 					</Grid>
 
-					<Grid mx="auto" size={{xs:10 , lg: 6}}>
+					<Grid item xs={10} lg={6} mx="auto">
                         <LottieHero />
                         <Typography color='primary.main' variant='subtitle1'> EPC </Typography>
                     </Grid>

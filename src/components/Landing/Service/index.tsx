@@ -12,9 +12,9 @@ const ServiceSection = () => {
   return (
     <Container maxWidth='xl'>
       <Stack mt={4} textAlign='center'>
-        <Grid className={classes.section}>
+        <Grid container className={classes.section}>
           {ServiceList.map((item: ServiceItem) => (
-            <Grid size={{ xs: 4 }} key={item.id}>
+            <Grid item xs={4} key={item.id}>
               <ServiceCard serviceItem={item} />
             </Grid>
           ))}
