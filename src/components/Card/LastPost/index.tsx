@@ -1,7 +1,8 @@
 "use client"
 import {Typography} from '@mui/material';
-import Grid from '@mui/material/Grid2';
+import Grid from '@mui/material/Grid';
 import {Stack} from '@mui/system';
+import Link from "next/link";
 import React, {FunctionComponent} from 'react';
 import {useSelector} from "react-redux";
 
@@ -11,7 +12,6 @@ import AppImage from '@/components/ui/AppImage';
 import CustomBadge from '@/components/ui/Badge';
 
 import {LastPostItem} from '@/types/lastPost';
-import Link from "next/link";
 
 interface LastPostCardProps {
 	lastPostItem: LastPostItem;

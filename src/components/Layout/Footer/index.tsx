@@ -1,5 +1,5 @@
 import { Box, Container, Stack, Typography } from '@mui/material';
-import Grid from '@mui/material/Grid2';
+import Grid from '@mui/material/Grid';
 import Link from 'next/link';
 
 import classes from '@/components/Layout/Footer/footer.module.css';

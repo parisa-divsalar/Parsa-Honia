@@ -1,6 +1,7 @@
 import {Typography, useMediaQuery} from '@mui/material';
-import Grid from '@mui/material/Grid2';
+import Grid from '@mui/material/Grid';
 import { Stack } from '@mui/system';
+import Link from "next/link";
 import React, { FunctionComponent } from 'react';
 
 import classes from '@/components/Card/News/News.module.css';
@@ -8,7 +9,6 @@ import classes from '@/components/Card/News/News.module.css';
 import AppImage from '@/components/ui/AppImage';
 import CustomBadge from '@/components/ui/Badge';
 
-import Link from "next/link";
 import {NewsItem} from "@/types/newsItem";
 
 interface NewsCardProps {

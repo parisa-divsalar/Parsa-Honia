@@ -1,7 +1,7 @@
 "use client"
 import ArrowBackRoundedIcon from '@mui/icons-material/ArrowBackRounded';
 import {Container, Stack, Typography} from '@mui/material';
-import Grid from '@mui/material/Grid2';
+import Grid from '@mui/material/Grid';
 import {useSelector} from "react-redux";
 
 import classes from '@/components/Landing/Projects/projects.module.css';

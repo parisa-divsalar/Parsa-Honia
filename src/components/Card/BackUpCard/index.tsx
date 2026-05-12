@@ -1,9 +1,11 @@
-import React from 'react';
-import {Stack} from "@mui/system";
-import Grid from "@mui/material/Grid2";
-import classes from "@/components/Landing/BackUp/backUp.module.css";
-import AppImage from "@/components/ui/AppImage";
 import {Typography} from "@mui/material";
+import Grid from "@mui/material/Grid";
+import {Stack} from "@mui/system";
+import React from 'react';
+
+import classes from "@/components/Landing/BackUp/backUp.module.css";
+
+import AppImage from "@/components/ui/AppImage";
 
 const ServiceCard = ({title, des, img}: { title: string, des: string, img: string }) => {
 	// @ts-ignore

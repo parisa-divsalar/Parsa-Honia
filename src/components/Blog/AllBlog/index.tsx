@@ -1,13 +1,16 @@
 "use client"
 
 import { Container, Stack, Typography } from '@mui/material';
-import Grid from '@mui/material/Grid2';
-import classes from '@/components/Blog/AllBlog/blog.module.css';
-import { AllBlogList } from "@/components/Blog/AllBlog/data";
-import { AllBlogItem } from "@/types/allBlogItem";
+import Grid from '@mui/material/Grid';
 import React, { useState } from "react";
+
+import classes from '@/components/Blog/AllBlog/blog.module.css';
+
+import { AllBlogList } from "@/components/Blog/AllBlog/data";
 import AllBlogCard from "@/components/Card/AllBlog";
 import CustomButton from "@/components/ui/CustomButton";
+
+import { AllBlogItem } from "@/types/allBlogItem";
 
 const AllBlogSection = () => {
 	const [activeButton, setActiveButton] = useState(null);
@@ -36,7 +39,7 @@ const AllBlogSection = () => {
 					{['همه', 'هوش ', 'کریپتو', 'تحصیل', 'کد ', 'دیزاین'].map((label) => (
 						<CustomButton
 							key={label}
-							size={'small'}
+							size="small"
 							minWidth={true}
 							//@ts-ignore
 							variant={activeButton === label ? 'info' : 'outlined'}

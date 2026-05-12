@@ -1,13 +1,15 @@
 import { Typography, useMediaQuery } from '@mui/material';
-import Grid from '@mui/material/Grid2';
+import Grid from '@mui/material/Grid';
 import { Stack } from '@mui/system';
+import Link from "next/link";
 import React, { FunctionComponent } from 'react';
 
 import classes from '@/components/Card/AllBlog/allBlog.module.css';
+
 import AppImage from '@/components/ui/AppImage';
-import Link from "next/link";
-import { AllBlogItem } from "@/types/allBlogItem";
 import CustomButton from "@/components/ui/CustomButton";
+
+import { AllBlogItem } from "@/types/allBlogItem";
 
 interface AllBlogCardProps {
 	allBlogItem: AllBlogItem;

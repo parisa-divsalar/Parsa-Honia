@@ -1,6 +1,6 @@
 'use client';
 import { Stack } from '@mui/material';
-import Grid from '@mui/material/Grid2';
+import Grid from '@mui/material/Grid';
 import Link from 'next/link';
 import { useState } from 'react';
 import { useSelector } from 'react-redux';

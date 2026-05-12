@@ -1,6 +1,6 @@
 'use client';
 import { Container, Stack, Typography } from '@mui/material';
-import Grid from '@mui/material/Grid2';
+import Grid from '@mui/material/Grid';
 import { useSelector } from 'react-redux';
 
 import AppImage from '@/components/ui/AppImage';

@@ -1,10 +1,13 @@
 import {Container, Stack, Typography} from '@mui/material';
-import Grid from '@mui/material/Grid2';
-import classes from '@/components/Blog/LastPost/blog.module.css';
-import {LastPostList} from "@/components/Blog/LastPost/data";
-import {LastPostItem} from "@/types/lastPost";
-import LastPostCard from "@/components/Card/LastPost";
+import Grid from '@mui/material/Grid';
 import React from "react";
+
+import classes from '@/components/Blog/LastPost/blog.module.css';
+
+import {LastPostList} from "@/components/Blog/LastPost/data";
+import LastPostCard from "@/components/Card/LastPost";
+
+import {LastPostItem} from "@/types/lastPost";
 
 
 const LastPostSection = () => {

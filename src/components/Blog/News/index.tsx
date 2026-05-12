@@ -1,10 +1,12 @@
 "use client"
 
-import {Container, Pagination, Stack, Typography} from '@mui/material';
-import Grid from '@mui/material/Grid2';
-import classes from '@/components/Blog/News/blog.module.css';
-import {NewsList} from "@/components/Blog/News/data";
+import {Container, Stack, Typography} from '@mui/material';
+import Grid from '@mui/material/Grid';
 import React, {FunctionComponent} from "react";
+
+import classes from '@/components/Blog/News/blog.module.css';
+
+import {NewsList} from "@/components/Blog/News/data";
 import NewsCard from "@/components/Card/News";
 import UsePagination from "@/components/ui/Pagination/pagination";
 

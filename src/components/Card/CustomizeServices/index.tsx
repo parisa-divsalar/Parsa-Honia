@@ -1,11 +1,11 @@
 import { Typography } from '@mui/material';
-import Grid from '@mui/material/Grid2';
+import Grid from '@mui/material/Grid';
+import {Stack} from "@mui/system";
 import React from 'react';
 
 import classes from '@/components/Landing/CustomizeServices/CustomizeServices.module.css';
 
 import AppImage from '@/components/ui/AppImage';
-import {Stack} from "@mui/system";
 
 const CustomizeServicesCard = ({
   title,
