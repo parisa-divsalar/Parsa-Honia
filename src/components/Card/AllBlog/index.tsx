@@ -1,5 +1,6 @@
 import { Typography, useMediaQuery } from '@mui/material';
 import Grid from '@mui/material/Grid';
+import type { Theme } from '@mui/material/styles';
 import { Stack } from '@mui/system';
 import Link from "next/link";
 import React, { FunctionComponent } from 'react';
@@ -20,7 +21,7 @@ const AllBlogCard: FunctionComponent<AllBlogCardProps> = (props) => {
 	const { allBlogItem, bigCard } = props;
 	const { des, title, img, time } = allBlogItem;
 
-	const isMobile = useMediaQuery((theme) => theme.breakpoints.down('sm'));
+	const isMobile = useMediaQuery((theme: Theme) => theme.breakpoints.down('sm'));
 
 	return (
 		<Stack>

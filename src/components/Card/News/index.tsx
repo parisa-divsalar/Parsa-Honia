@@ -1,5 +1,6 @@
 import {Typography, useMediaQuery} from '@mui/material';
 import Grid from '@mui/material/Grid';
+import type { Theme } from '@mui/material/styles';
 import { Stack } from '@mui/system';
 import Link from "next/link";
 import React, { FunctionComponent } from 'react';
@@ -18,7 +19,7 @@ interface NewsCardProps {
 const NewsCard: FunctionComponent<NewsCardProps> = (props) => {
   const { newsItem , col } = props;
   const { des, title, img, time } = newsItem;
-	const isMobile = useMediaQuery((theme) => theme.breakpoints.down('sm'));
+	const isMobile = useMediaQuery((theme: Theme) => theme.breakpoints.down('sm'));
 
   return (
     <Stack width='100%'>

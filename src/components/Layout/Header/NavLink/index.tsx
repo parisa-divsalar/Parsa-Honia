@@ -4,6 +4,7 @@ import Link from 'next/link';
 
 import {usePathname} from 'next/navigation';
 import {Typography, useMediaQuery} from '@mui/material';
+import type { Theme } from '@mui/material/styles';
 import {FunctionComponent} from 'react';
 import classes from '@/components/Layout/Header/NavLink/navlink.module.css';
 interface NavLinkProps {
@@ -14,7 +15,7 @@ interface NavLinkProps {
 const NavLink: FunctionComponent<NavLinkProps> = (props) => {
 	const {label = '', link = ''} = props;
 	const pathName = usePathname();
-	const isMobile = useMediaQuery((theme) => theme.breakpoints.down('sm'));
+	const isMobile = useMediaQuery((theme: Theme) => theme.breakpoints.down('sm'));
 
 	return (
 		<Link href={link} style={{textDecoration: 'none'}}>

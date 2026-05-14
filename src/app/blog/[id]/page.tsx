@@ -5,35 +5,39 @@ const BlogDetails = () => {
   return (
     <main>
       <Container maxWidth='xl'>
-        <Stack textAlign='center' justifyContent='center' mt={6}>
+        <Stack sx={{ textAlign: 'center', justifyContent: 'center', mt: 6 }}>
           <Typography
-            textAlign='center'
             variant='subtitle1'
-            fontWeight='bold'
             color='text.primary'
-            mt={1}
+            sx={{ textAlign: 'center', fontWeight: 'bold', mt: 1 }}
           >
             هوش مصنوعی (Artificial intelligence)
           </Typography>
-          <Typography mb={3} textAlign='center' variant='subtitle2' color='text.primary' mt={1}>
+          <Typography variant='subtitle2' color='text.primary' sx={{ mb: 3, textAlign: 'center', mt: 1 }}>
             عادل گلدست ۱۰ اسفند ۱۴۰۳
           </Typography>
           <Stack
-			  height={{xs:'200px' , lg:'477px'}}
-            textAlign='center'
-            justifyContent='center'
-            mt={1}
-            position='relative'
+            sx={{
+              height: { xs: '200px', lg: '477px' },
+              textAlign: 'center',
+              justifyContent: 'center',
+              mt: 1,
+              position: 'relative',
+            }}
           >
             <AppImage src={'/images/blog/d-1.png'} title='' layout='fill' />
           </Stack>
         </Stack>
 
-        <Stack textAlign='start' justifyContent='center' mt={{xs:2 , lg:6}}>
-          <Typography textAlign='start' lineHeight={2.5} variant='subtitle1' color='text.primary' mt={1}>
+        <Stack sx={{ textAlign: 'start', justifyContent: 'center', mt: { xs: 2, lg: 6 } }}>
+          <Typography variant='subtitle1' color='text.primary' sx={{ textAlign: 'start', lineHeight: 2.5, mt: 1 }}>
             بهترین ابزارهای هوش مصنوعی برای تحقیقات دانشگاهی
           </Typography>
-          <Typography mb={3} textAlign='start' lineHeight={2.5} variant='subtitle2' color='text.primary' mt={1}>
+          <Typography
+            variant='subtitle2'
+            color='text.primary'
+            sx={{ mb: 3, textAlign: 'start', lineHeight: 2.5, mt: 1 }}
+          >
             پلاجیاریسم (Plagiarism) به معنای سرقت ادبی است و این موضوع در مقالات ISI به شدت اهمیت
             دارد. پس از ظهور هوش‌های مصنوعی، انتشارات معتبر دنیا به این نتیجه رسیدند که نگارش مقالات
             تحقیقاتی نباید تابع منطق و تفکر یک هوش مصنوعی به طور تمام و کمال باشد. به همین دلیل،
@@ -46,11 +50,15 @@ const BlogDetails = () => {
             استفاده کرده‌اید یا خیر.
           </Typography>
         </Stack>
-        <Stack textAlign='start' justifyContent='center' mt={1}>
-          <Typography textAlign='start' variant='subtitle1' color='text.primary' mt={1}>
+        <Stack sx={{ textAlign: 'start', justifyContent: 'center', mt: 1 }}>
+          <Typography variant='subtitle1' color='text.primary' sx={{ textAlign: 'start', mt: 1 }}>
             عدم بررسی متون آکادمیک
           </Typography>
-          <Typography mb={3} textAlign='start' lineHeight={2.5} variant='subtitle2' color='text.primary' mt={1}>
+          <Typography
+            variant='subtitle2'
+            color='text.primary'
+            sx={{ mb: 3, textAlign: 'start', lineHeight: 2.5, mt: 1 }}
+          >
             پلاجیاریسم (Plagiarism) به معنای سرقت ادبی است و این موضوع در مقالات ISI به شدت اهمیت
             دارد. پس از ظهور هوش‌های مصنوعی، انتشارات معتبر دنیا به این نتیجه رسیدند که نگارش مقالات
             تحقیقاتی نباید تابع منطق و تفکر یک هوش مصنوعی به طور تمام و کمال باشد. به همین دلیل،
@@ -62,35 +70,41 @@ const BlogDetails = () => {
             نیستند آیا شما از هوش مصنوعی برای نگارش یک مقاله‌ی تحقیقاتی یا پایان‌نامه به زبان فارسی
             استفاده کرده‌اید یا خیر.
           </Typography>
-          <Typography textAlign='start' variant='subtitle2' color='text.primary'>
+          <Typography variant='subtitle2' color='text.primary' sx={{ textAlign: 'start' }}>
             ChatGPT و سایر هوش‌های مصنوعی مشابه نمی‌توانند برای هر حقیقت (Fact)
           </Typography>
-          <Typography textAlign='start' variant='subtitle2' color='text.primary' mt={1}>
+          <Typography variant='subtitle2' color='text.primary' sx={{ textAlign: 'start', mt: 1 }}>
             ی مشابه نمی‌توانند برای هChatGPT و سایر هوش‌های مصنوعی مشابه نمی‌توانند برای هر حقیقت
             (Fact){' '}
           </Typography>
-          <Typography textAlign='start' variant='subtitle2' color='text.primary' mt={1}>
+          <Typography variant='subtitle2' color='text.primary' sx={{ textAlign: 'start', mt: 1 }}>
             ChatGPT و سایر هوش‌های مصنوعی مشابه نمی‌توانند برای هر حقیقت (Fact){' '}
           </Typography>
-          <Typography textAlign='start' mb={3} variant='subtitle2' color='text.primary' mt={1}>
+          <Typography variant='subtitle2' color='text.primary' sx={{ textAlign: 'start', mb: 3, mt: 1 }}>
             ChatGPT و سایر هوش‌های مصنوعی مشابه نمی‌توانند برای هر حقیقت (Fact){' '}
           </Typography>
 
           <Stack
-            height={{xs:'200px' , lg:'477px'}}
-            textAlign='center'
-            justifyContent='center'
-            mt={1}
-            position='relative'
+            sx={{
+              height: { xs: '200px', lg: '477px' },
+              textAlign: 'center',
+              justifyContent: 'center',
+              mt: 1,
+              position: 'relative',
+            }}
           >
             <AppImage src={'/images/blog/d-2.png'} title='' layout='fill' />
           </Stack>
         </Stack>
-        <Stack textAlign='start' justifyContent='center' mt={1} mb={3}>
-          <Typography textAlign='start' variant='subtitle1' color='text.primary' mt={3}>
+        <Stack sx={{ textAlign: 'start', justifyContent: 'center', mt: 1, mb: 3 }}>
+          <Typography variant='subtitle1' color='text.primary' sx={{ textAlign: 'start', mt: 3 }}>
             معایب استفاده از هوش مصنوعی برای تحقیق
           </Typography>
-          <Typography mb={3} textAlign='start' lineHeight={2.5} variant='subtitle2' color='text.primary' mt={1}>
+          <Typography
+            variant='subtitle2'
+            color='text.primary'
+            sx={{ mb: 3, textAlign: 'start', lineHeight: 2.5, mt: 1 }}
+          >
             پلاجیاریسم (Plagiarism) به معنای سرقت ادبی است و این موضوع در مقالات ISI به شدت اهمیت
             دارد. پس از ظهور هوش‌های مصنوعی، انتشارات معتبر دنیا به این نتیجه رسیدند که نگارش مقالات
             تحقیقاتی نباید تابع منطق و تفکر یک هوش مصنوعی به طور تمام و کمال باشد. به همین دلیل،
@@ -107,7 +121,7 @@ const BlogDetails = () => {
             قادر به اعلام این موضوع نیستند آیا شما از هوش مصنوعی برای نگارش یک مقاله‌ی تحقیقاتی یا
             پایان‌نامه به زبان فارسی استفاده کرده‌اید یا خیر.
           </Typography>
-          <Typography mb={7} textAlign='start' lineHeight={2.5} variant='subtitle2' color='text.primary'>
+          <Typography variant='subtitle2' color='text.primary' sx={{ mb: 7, textAlign: 'start', lineHeight: 2.5 }}>
             پلاجیاریسم (Plagiarism) به معنای سرقت ادبی است و این موضوع در مقالات ISI به شدت اهمیت
             دارد. پس از ظهور هوش‌های مصنوعی، انتشارات معتبر دنیا به این نتیجه رسیدند که نگارش مقالات
             تحقیقاتی نباید تابع منطق و تفکر یک هوش مصنوعی به طور تمام و کمال باشد. به همین دلیل،
