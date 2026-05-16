@@ -9,7 +9,7 @@ import {
   Stack,
   Typography,
 } from '@mui/material';
-import Grid from '@mui/material/Grid';
+import Grid from '@mui/material/Grid2';
 import { Fragment, useState } from 'react';
 
 import classes from '@/components/Landing/Question/question.module.css';
@@ -25,14 +25,19 @@ const FAQSection = () => {
   };
 
   return (
-    <Grid container bgcolor='background.mainLightCustom' mt={{xs:6 ,lg:10}}>
+    <Grid container bgcolor='background.mainLightCustom' mt={{ xs: 6, lg: 10 }}>
       <Container maxWidth='xl'>
-        <Stack className={classes.question}  py={{ lg:5}} textAlign='center' height='auto'>
-          <Grid display='flex' flexDirection='column' justifyContent='start' item xs={12} md={5}>
+        <Stack className={classes.question} py={{ lg: 5 }} textAlign='center' height='auto'>
+          <Grid
+            display='flex'
+            flexDirection='column'
+            justifyContent='start'
+            size={{ xs: 12, md: 5 }}
+          >
             <Typography
-              textAlign={{sm:'center',lg:'right'}}
+              textAlign={{ sm: 'center', lg: 'right' }}
               color='text.primary'
-              mt={{xs:3 ,lg:2}}
+              mt={{ xs: 3, lg: 2 }}
               // @ts-ignore
               variant='subtitle4'
               gutterBottom
@@ -40,7 +45,7 @@ const FAQSection = () => {
               سوالات متداول
             </Typography>
             <Typography
-			  textAlign={{sm:'center',lg:'right'}}
+              textAlign={{ sm: 'center', lg: 'right' }}
               color='text.main'
               fontWeight='bold'
               variant='subtitle1'
@@ -49,10 +54,10 @@ const FAQSection = () => {
               برای کسب اطلاعات بیشتر تماس بگیرید.
             </Typography>
             <Stack className={classes.question_image}>
-				<AppImage src='/images/questions.png' title='' width={252} height={330} />
-			</Stack>
+              <AppImage src='/images/questions.png' title='' width={252} height={330} />
+            </Stack>
           </Grid>
-          <Grid item xs={12} md={7}>
+          <Grid size={{ xs: 12, md: 7 }}>
             {FaqList.map((item, index) => (
               <Fragment key={`faq_${index}`}>
                 <Accordion

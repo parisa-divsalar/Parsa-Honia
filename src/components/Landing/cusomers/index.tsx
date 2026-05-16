@@ -1,6 +1,6 @@
 'use client';
 import { Container, Stack, Typography } from '@mui/material';
-import Grid from '@mui/material/Grid';
+import Grid from '@mui/material/Grid2';
 import { useSelector } from 'react-redux';
 
 import AppImage from '@/components/ui/AppImage';
@@ -10,7 +10,7 @@ const Customers = () => {
   return (
     <Stack bgcolor='background.slideCustomer' mt={7}>
       <Container maxWidth='xl'>
-        <Grid container my={{xs:2 , lg:5}}  textAlign='center'>
+        <Grid container my={{ xs: 2, lg: 5 }} textAlign='center'>
           <Typography
             mb={5}
             textAlign='center'
@@ -21,7 +21,14 @@ const Customers = () => {
           >
             مشتریان ما
           </Typography>
-          <Stack direction='row' gap={5} overflow="auto" width='100%' justifyContent='space-between' my={1}>
+          <Stack
+            direction='row'
+            gap={5}
+            overflow='auto'
+            width='100%'
+            justifyContent='space-between'
+            my={1}
+          >
             {theme === 'dark' ? (
               <>
                 <AppImage src='/images/customers/b3.png' title='' width={150} height={80} />

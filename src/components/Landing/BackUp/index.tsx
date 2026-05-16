@@ -1,5 +1,5 @@
 import { Container, Stack, Typography } from '@mui/material';
-import Grid from '@mui/material/Grid';
+import Grid from '@mui/material/Grid2';
 
 import classes from '@/components/Landing/BackUp/backUp.module.css';
 
@@ -9,19 +9,26 @@ import AppImage from '@/components/ui/AppImage';
 
 const BackUpSection = () => {
   return (
-    <Grid container bgcolor='background.mainLightCustom' mt={{xs:5 , lg:10}}>
+    <Grid container bgcolor='background.mainLightCustom' mt={{ xs: 5, lg: 10 }}>
       <Container maxWidth='xl'>
-        <Stack pb={{lg:15}} textAlign='center'>
-          <Grid width={{xs:'100%' ,lg:'57%'}} marginX='auto' mb={{lg:5}} mt={{xs:3 ,lg:10}}>
+        <Stack pb={{ lg: 15 }} textAlign='center'>
+          <Grid
+            width={{ xs: '100%', lg: '57%' }}
+            marginX='auto'
+            mb={{ lg: 5 }}
+            mt={{ xs: 3, lg: 10 }}
+          >
             <Typography
-              pb={{xs:3 ,lg:10}}
+              pb={{ xs: 3, lg: 10 }}
               textAlign='center'
               variant='h4'
               color='text.primary'
               mt={1}
               width='100%'
             >
-              در دنیایی که پر از "تولیدکننده راه‌حل" است، ما آمده‌ایم تا هم‌فکر، همراه و هم‌راستا با شما باشیم.   </Typography>
+              در دنیایی که پر از "تولیدکننده راه‌حل" است، ما آمده‌ایم تا هم‌فکر، همراه و هم‌راستا با
+              شما باشیم.{' '}
+            </Typography>
           </Grid>
           <Grid className={classes.backUp}>
             {BackUpList.map((item, index) => (

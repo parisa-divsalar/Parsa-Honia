@@ -1,6 +1,6 @@
 'use client';
 import { Container, Stack, Typography } from '@mui/material';
-import Grid from '@mui/material/Grid';
+import Grid from '@mui/material/Grid2';
 import { useSelector } from 'react-redux';
 
 import classes from '@/components/Contact/contact.module.css';
@@ -14,9 +14,9 @@ const ServiceSection = () => {
 
   return (
     <Container maxWidth='xl'>
-      <Stack my={{lg:10}} textAlign='center'>
+      <Stack my={{ lg: 10 }} textAlign='center'>
         <Grid className={classes.contact_section_container}>
-          <Stack display={{xs:'none' ,lg:'flex'}} textAlign='center' justifyContent='center'>
+          <Stack display={{ xs: 'none', lg: 'flex' }} textAlign='center' justifyContent='center'>
             <Typography textAlign='center' variant='h4' color='text.primary' mt={4}>
               تماس با ما
             </Typography>
@@ -34,13 +34,13 @@ const ServiceSection = () => {
               justifyContent='space-between'
               className={classes.contact_section}
             >
-              <Grid className={classes.contact_section_inputs} width={{lg:'40%'}} mt={2}>
-                <Stack gap={{lg:1}} direction={{lg:'row'}}>
+              <Grid className={classes.contact_section_inputs} width={{ lg: '40%' }} mt={2}>
+                <Stack gap={{ lg: 1 }} direction={{ lg: 'row' }}>
                   <CustomInput label='نام' />
                   <CustomInput label='نام خانوادگی' />
                 </Stack>
 
-                <Stack gap={{lg:1}} direction={{lg:'row'}}>
+                <Stack gap={{ lg: 1 }} direction={{ lg: 'row' }}>
                   <CustomInput label='شماره موبایل' />
                   <CustomInput label='ایمیل' />
                 </Stack>
@@ -55,13 +55,18 @@ const ServiceSection = () => {
               <Stack
                 className={classes.contact_map_section}
                 direction='row'
-                width={{lg:'55%'}}
-				sx={{ borderColor: 'fundamental.border' }}
+                width={{ lg: '55%' }}
+                sx={{ borderColor: 'fundamental.border' }}
                 justifyContent='space-between'
-
               >
                 <Stack>
-                  <Typography textAlign='start' mt={{xs:4 , lg:- 9}} mb={{xs:2 , lg:0}} variant='h5' color='text.primary'>
+                  <Typography
+                    textAlign='start'
+                    mt={{ xs: 4, lg: -9 }}
+                    mb={{ xs: 2, lg: 0 }}
+                    variant='h5'
+                    color='text.primary'
+                  >
                     راه‌های ارتباطی
                   </Typography>
                   <Grid className={classes.contact_details}>
@@ -125,11 +130,13 @@ const ServiceSection = () => {
                       width={36}
                       height={36}
                     />
-                    <Stack mr={2} alignItems='start' >
+                    <Stack mr={2} alignItems='start'>
                       <Typography
                         textAlign='start'
                         // @ts-ignore
-                        variant='subtitle3'    red onMouseMove={}
+                        variant='subtitle3'
+                        red
+                        onMouseMove={}
                         color='text.primary'
                       >
                         دفتر مرکزی تهران:
@@ -141,9 +148,15 @@ const ServiceSection = () => {
                   </Grid>
                 </Stack>
 
-				  <Stack position='relative' direction='row' justifyContent='start' width={{xs:'100%' ,lg:438}} height={{xs:200 ,lg:315}}>
-					  <AppImage src='/images/contact/map.png' title=''  layout='fill' />
-				  </Stack>
+                <Stack
+                  position='relative'
+                  direction='row'
+                  justifyContent='start'
+                  width={{ xs: '100%', lg: 438 }}
+                  height={{ xs: 200, lg: 315 }}
+                >
+                  <AppImage src='/images/contact/map.png' title='' layout='fill' />
+                </Stack>
               </Stack>
             </Stack>
           </Grid>

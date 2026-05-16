@@ -1,5 +1,5 @@
 import { Box, Container, Stack, Typography } from '@mui/material';
-import Grid from '@mui/material/Grid';
+import Grid from '@mui/material/Grid2';
 import Link from 'next/link';
 
 import classes from '@/components/Layout/Footer/footer.module.css';
@@ -37,13 +37,17 @@ const Footer = () => {
               خدمات
             </Typography>
             <Typography variant='subtitle2' mt={2} color='white'>
-                تست    </Typography>
+              تست{' '}
+            </Typography>
             <Typography mt={1} variant='subtitle2' color='white'>
-                تست            </Typography>
+              تست{' '}
+            </Typography>
             <Typography mt={1} variant='subtitle2' color='white'>
-                تست            </Typography>
+              تست{' '}
+            </Typography>
             <Typography mt={1} variant='subtitle2' color='white'>
-                تست            </Typography>
+              تست{' '}
+            </Typography>
           </Grid>
 
           <Grid>
@@ -77,15 +81,15 @@ const Footer = () => {
             {/*  هلثی*/}
             {/*</Typography>*/}
 
-            <Link
-              href='#'
-            >
+            <Link href='#'>
               <Typography mt={1} variant='subtitle2' color='white'>
-                  تست              </Typography>
+                تست{' '}
+              </Typography>
             </Link>
             <Link href='#'>
               <Typography mt={1} variant='subtitle2' color='white'>
-                  تست              </Typography>
+                تست{' '}
+              </Typography>
             </Link>
           </Grid>
           <Grid>

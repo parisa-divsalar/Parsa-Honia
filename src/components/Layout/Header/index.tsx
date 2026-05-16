@@ -1,6 +1,6 @@
 'use client';
 import { Stack } from '@mui/material';
-import Grid from '@mui/material/Grid';
+import Grid from '@mui/material/Grid2';
 import Link from 'next/link';
 import { useState } from 'react';
 import { useSelector } from 'react-redux';
@@ -22,7 +22,7 @@ const Header = () => {
   return (
     <Stack direction='row' className={classes.header} bgcolor='background.mainLight'>
       <Link className={classes.header_logo} href='/'>
-        <AppImage  width={50} height={50} src='/images/logo/logo.png' alt='لوگو سایت' priority />
+        <AppImage width={50} height={50} src='/images/logo/logo.png' alt='لوگو سایت' priority />
       </Link>
 
       <Stack
@@ -54,7 +54,7 @@ const Header = () => {
             />
           </Grid>
         </Grid>
-        {HeaderMenuList.map((item: TMenuItem, index) => {
+        {HeaderMenuList.map((item: TMenuItem) => {
           const { id, label, link } = item;
           return <NavLink link={link} label={label} key={id} />;
         })}

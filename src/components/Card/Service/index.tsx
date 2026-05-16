@@ -1,5 +1,5 @@
 import { Typography } from '@mui/material';
-import Grid from '@mui/material/Grid';
+import Grid from '@mui/material/Grid2';
 import { Stack } from '@mui/system';
 import React, { FunctionComponent } from 'react';
 
@@ -14,11 +14,11 @@ interface ServiceCardProps {
 }
 const ServiceCard: FunctionComponent<ServiceCardProps> = (props) => {
   const { serviceItem } = props;
-  const { des, title, img,text } = serviceItem;
+  const { des, title, img } = serviceItem;
 
   return (
     <Stack>
-      <Grid className={classes.section_item} width='100%' p={{lg:4}}>
+      <Grid className={classes.section_item} width='100%' p={{ lg: 4 }}>
         <Grid>
           <AppImage src={img} title='' width={64} height={64} />
         </Grid>

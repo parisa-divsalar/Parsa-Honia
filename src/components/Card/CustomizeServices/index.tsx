@@ -1,6 +1,6 @@
 import { Typography } from '@mui/material';
-import Grid from '@mui/material/Grid';
-import {Stack} from "@mui/system";
+import Grid from '@mui/material/Grid2';
+import { Stack } from '@mui/system';
 import React from 'react';
 
 import classes from '@/components/Landing/CustomizeServices/CustomizeServices.module.css';
@@ -19,9 +19,15 @@ const CustomizeServicesCard = ({
   // @ts-ignore
   return (
     <Grid className={classes.customizeServices_item} direction='row' mt={2} width='100%'>
-		<Stack ml={{lg:2}} position='relative' direction='row'   width={{xs:70 ,lg:64}} height={{xs:48 ,lg:64}}>
-			<AppImage src={img} title=''  layout='fill' />
-		</Stack>
+      <Stack
+        ml={{ lg: 2 }}
+        position='relative'
+        direction='row'
+        width={{ xs: 70, lg: 64 }}
+        height={{ xs: 48, lg: 64 }}
+      >
+        <AppImage src={img} title='' layout='fill' />
+      </Stack>
       <Grid className={classes.customizeServices_item_text}>
         <Typography variant='subtitle1' mt={0.5} color='text.primary'>
           {title}
