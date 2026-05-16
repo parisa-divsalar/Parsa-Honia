@@ -136,7 +136,6 @@ const ServiceSection = () => {
                         // @ts-ignore
                         variant='subtitle3'
                         red
-                        onMouseMove={}
                         color='text.primary'
                       >
                         دفتر مرکزی تهران:
