@@ -1,11 +1,12 @@
 'use client';
 
-import { IconButton } from '@mui/material';
 import DarkModeIcon from '@mui/icons-material/DarkMode';
 import LightModeIcon from '@mui/icons-material/LightMode';
+import { IconButton } from '@mui/material';
 import { useDispatch, useSelector } from 'react-redux';
-import { setTheme } from '@/store/common/commonSlice';
+
 import { themeSelector } from '@/store/common/commonSelector';
+import { setTheme } from '@/store/common/commonSlice';
 
 const Theming = () => {
   const dispatch = useDispatch();

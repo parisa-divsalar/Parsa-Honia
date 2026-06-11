@@ -1,10 +1,20 @@
 .navlink {
-
+  color: #151515 !important;
+  font-size: 0.95rem !important;
+  font-weight: 500 !important;
+  padding: 1rem 0;
+  transition: color 0.2s ease;
+  white-space: nowrap;
 }
 
+.navlink:hover,
+.active {
+  color: #e30613 !important;
+}
 
-@media screen and (max-width: 991px ) {
-	.navlink {
-		border-bottom: 1px solid;
-	}
+@media screen and (max-width: 991px) {
+  .navlink {
+    border-bottom: 1px solid #ececec;
+    width: 100%;
+  }
 }

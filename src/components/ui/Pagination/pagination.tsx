@@ -31,11 +31,11 @@ export default function UsePagination() {
                   type='button'
                   style={{
                     fontWeight: selected ? 'bold' : undefined,
-                    background: selected ? '#D6EDF7' : undefined,
+                    background: selected ? '#FCE8EA' : undefined,
                   }}
                   {...item}
                 >
-                  <Typography color={selected ? '#32A5D8' : 'text.primary'}>{page}</Typography>
+                  <Typography color={selected ? '#E30613' : 'text.primary'}>{page}</Typography>
                 </button>
               );
             } else if (type === 'previous') {

@@ -2,11 +2,8 @@
 'use client';
 
 import { Box } from '@mui/material';
-import { Metadata } from 'next';
 import { usePathname } from 'next/navigation';
 import * as React from 'react';
-
-
 
 export default function NotFound() {
   const pathname = usePathname();

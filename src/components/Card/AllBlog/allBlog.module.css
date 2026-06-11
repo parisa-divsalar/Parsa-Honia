@@ -1,33 +1,33 @@
 .section_item {
-	position: relative;
+  position: relative;
 }
 .section_item_text {
-	 position: absolute;
-	 right: 20px;
-	 width: 90%;
-	 bottom: 20px;
-	z-index: 100;
- }
+  position: absolute;
+  right: 20px;
+  width: 90%;
+  bottom: 20px;
+  z-index: 100;
+}
 .imageContainer {
-	position: relative;
-	width: 100%;
- 	border-radius: 20px;
-	overflow: hidden;
+  position: relative;
+  width: 100%;
+  border-radius: 20px;
+  overflow: hidden;
 }
 
 .gradientOverlay {
-	position: absolute;
-	top: 0;
-	left: 0;
-	right: 0;
-	bottom: 0;
-	background: linear-gradient(to bottom, #183B5600,   #152532);
-	z-index: 1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(to bottom, rgba(227, 6, 19, 0), #1a1a1a);
+  z-index: 1;
 }
-@media screen and (max-width: 1200px){
-	.section_item_text {
- 		right: 10px;
-		width: 90%;
-		bottom: 10px;
- 	}
+@media screen and (max-width: 1200px) {
+  .section_item_text {
+    right: 10px;
+    width: 90%;
+    bottom: 10px;
+  }
 }

@@ -3,9 +3,9 @@
 import { InputAdornment } from '@mui/material';
 import TextField from '@mui/material/TextField';
 import React, { FunctionComponent, ReactNode } from 'react';
+import { useSelector } from 'react-redux';
 
 import { toEnglishNumber } from '@/utils/validation';
-import {useSelector} from "react-redux";
 
 type inputModeType = 'tel' | 'numeric' | 'text' | 'email' | undefined;
 type variantType = 'outlined' | 'filled' | 'standard';
@@ -40,7 +40,7 @@ const CustomInput: FunctionComponent<CustomInputProps> = (props) => {
     variant = 'outlined',
     placeholder = '',
     value,
-	dark,
+    dark,
     error = false,
     helperText = '',
     type = 'text',
@@ -69,7 +69,7 @@ const CustomInput: FunctionComponent<CustomInputProps> = (props) => {
       onEnter?.();
     }
   };
-	const theme = useSelector((state: any) => state.common.theme);
+  const theme = useSelector((state: any) => state.common.theme);
 
   return (
     <TextField
@@ -90,25 +90,24 @@ const CustomInput: FunctionComponent<CustomInputProps> = (props) => {
       autoComplete='off'
       onKeyDown={handleKeyDown}
       disabled={disabled}
-	  sx={{
-
-		  '& .MuiInputBase-input': {
-			  color:dark ? "white" : theme === 'dark' ? "#FEFEFE" : '#374151',
-		  },
-		  '& .MuiOutlinedInput-notchedOutline': {
-			  borderColor:dark ? "white" : theme === 'dark' ? "#25406E" : '#D1D5DB',
-			  borderWidth:'1px',
-		  },
-		  '& input': {
-			  height: dark ? '2.8rem !important' : '40px !important',
-		  },
-		  '& label': {
-			  top:dark ? "0px" :"-3px",
-			  padding:"0 2px",
-			  color:dark ? "white" : theme === 'dark' ? "#FEFEFE" : '#374151',
-			  background:dark ? "#052153" : theme === 'dark' ? "#08152A" : 'white',
-		  },
-	  }}
+      sx={{
+        '& .MuiInputBase-input': {
+          color: dark ? 'white' : theme === 'dark' ? '#FEFEFE' : '#374151',
+        },
+        '& .MuiOutlinedInput-notchedOutline': {
+          borderColor: dark ? 'white' : theme === 'dark' ? '#444444' : '#D1D5DB',
+          borderWidth: '1px',
+        },
+        '& input': {
+          height: dark ? '2.8rem !important' : '40px !important',
+        },
+        '& label': {
+          top: dark ? '0px' : '-3px',
+          padding: '0 2px',
+          color: dark ? 'white' : theme === 'dark' ? '#FEFEFE' : '#374151',
+          background: dark ? '#2a2a2a' : theme === 'dark' ? '#1c1c1c' : 'white',
+        },
+      }}
       slotProps={{
         input: {
           inputMode,

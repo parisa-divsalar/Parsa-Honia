@@ -54,7 +54,7 @@ const AllBlogSection = () => {
               variant={activeButton === label ? 'info' : 'outlined'}
               onClick={() => handleButtonClick(label)}
             >
-              <Typography color={activeButton === label ? '#32A5D8' : 'text.primary'}>
+              <Typography color={activeButton === label ? '#E30613' : 'text.primary'}>
                 {label}
               </Typography>
             </CustomButton>

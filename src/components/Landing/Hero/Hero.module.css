@@ -1,8 +1,0 @@
-.hero_section {
-	flex-direction: row!important;
-}
-@media screen and (max-width: 1200px){
-	.hero_section {
-      flex-direction: column-reverse!important;
-	}
-}

@@ -11,17 +11,17 @@ export const HeaderMenuList: TMenuItem[] = [
   },
   {
     id: generateFakeUUIDv4(),
-    label: 'بلاگ',
-    // link: PublicRoutes.blog,
-      link: '',
-
-
+    label: 'پله‌برقی و پیاده‌رو متحرک',
+    link: '#mobility',
   },
   {
     id: generateFakeUUIDv4(),
-    label: 'درباره ما',
-    // link: PublicRoutes.about,
-      link: '',
-
+    label: 'سرویس',
+    link: '#service',
+  },
+  {
+    id: generateFakeUUIDv4(),
+    label: 'فرصت‌های شغلی',
+    link: '#career',
   },
 ];
